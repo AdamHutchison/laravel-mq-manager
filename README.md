@@ -48,7 +48,7 @@ however you may also pass a custom queue name as a second parameter to the `send
 rather than using the new operator**
 
 #### Basic Example:
-```$php 
+```php 
     // Sends message 'Hello world to the queue deined by MQ_MANAGER_QUEUE env value
     app(MQManager::class)->sendMessage('Hello World');
 
@@ -62,7 +62,7 @@ You can listen for messages sent by other services using the `listen()` method o
 with the `registerQueueListener()` method on the `MQManager` class. This method expects two parameter, 
 the first is the name of the queue and the second is a closure that that the message will be passed to. 
 
-```$xslt
+```php
     app(MQManager::class)->registerQueueListener('test_queue', function($message){
         echo $message->getBody();
     });
@@ -73,7 +73,7 @@ specified queue will be listened for, all queues subscribed to in the the `mqman
 will be ignored.
 
 #### Basic Example
-```$xslt
+```php
     // Listen for messages on queues defined in mqconfig.subscribed_queues array
     app(MQManager::class)->listen();
     
