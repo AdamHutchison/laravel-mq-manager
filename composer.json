@@ -2,7 +2,7 @@
     "name": "adamhutchison/laravel-mq-manager",
     "type": "library",
     "description": "MQ Manager for inter micro-service messaging in laravel",
-    "licence": "MIT",
+    "license": "MIT",
     "keywords": [
         "laravel",
         "MQRabbit",
