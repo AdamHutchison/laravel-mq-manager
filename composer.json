@@ -1,0 +1,27 @@
+{
+    "name": "adamhutchison/laravel-mq-manager",
+    "type": "library",
+    "description": "MQ Manager for inter micro-service messaging in laravel",
+    "require": {
+        "php-amqplib/php-amqplib": "^2.10",
+        "laravel/framework": "^6.5"
+    },
+    "authors": [
+        {
+            "name": "Adam Hutchison",
+            "email": "adamcraighutchison@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MQManager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MQManager\\MQManagerServiceProvider"
+            ]
+        }
+    }
+}
