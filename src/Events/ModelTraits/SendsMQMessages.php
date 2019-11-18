@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MQManager\ModelTraits\ModelTraits;
+namespace MQManager\Events\ModelTraits;
 
 
 use MQManager\Events\ModelEvents\ModelCreated;
