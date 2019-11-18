@@ -2,6 +2,12 @@
     "name": "adamhutchison/laravel-mq-manager",
     "type": "library",
     "description": "MQ Manager for inter micro-service messaging in laravel",
+    "licence": "MIT",
+    "keywords": [
+        "laravel",
+        "MQRabbit",
+        "microservice"
+    ],
     "require": {
         "php-amqplib/php-amqplib": "^2.10",
         "laravel/framework": "^6.5"
