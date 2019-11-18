@@ -83,10 +83,10 @@ will be ignored.
     });
 ```
 
-## Automatic Messaging For Models
+## Automatic Messaging For Models Events
 
 MQ Manager includes functionality that allows messages to be automatically sent to the
-when a model is created, updated or deleted. Simply add the `MQManager\ModelTraits\ModelTraits\SendsMQMessages`
+when a model is created, updated or deleted. Simply add the `MQManager\Events\ModelTraits\SendsMQMessages`
 to any model that you wish messages to be broadcast for. 
 
 ```php
@@ -116,4 +116,10 @@ MQ Messenger will then send a message in the following format to the queue defin
     }
 }
 ```
+
+## Listening For Model Events
+
+MQ Manager provides the following artisan command for listening for model events `php artisan mq-manager:listen`.
+This artisan command can be started and monitored using supervisor (in the same way that queue worker would) to allow for 
+model events to be detected from a different microservice.
 
