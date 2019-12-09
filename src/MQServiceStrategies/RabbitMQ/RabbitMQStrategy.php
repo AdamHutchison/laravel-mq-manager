@@ -52,7 +52,7 @@ class RabbitMQStrategy implements MQServiceInterface
     public function sendMessage($message, $queue = null)
     {
         if (!$queue) {
-            config('mqmanager.publish_queue');
+            $queue = config('mqmanager.publish_queue');
         }
 
         $this->channel->queue_declare($queue);
